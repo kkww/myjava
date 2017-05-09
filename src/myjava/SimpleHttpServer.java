@@ -9,10 +9,6 @@ import java.net.Socket;
 public class SimpleHttpServer {
 	private final static int PORT = 4000;
 	
-	public static void consolLog(String str) {
-		System.out.println("[HttpServer] " + str);
-	}
-	
 	public static void main(String[] args) {
 		ServerSocket serverSocket = null;
 		try {
@@ -46,5 +42,8 @@ public class SimpleHttpServer {
 		}
 		
 	}
-
+	
+	private static void consolLog(String str) {
+		System.out.println("[HttpServer] " + str);
+	}
 }
